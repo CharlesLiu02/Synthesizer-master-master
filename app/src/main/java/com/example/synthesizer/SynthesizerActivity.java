@@ -166,8 +166,8 @@ public class SynthesizerActivity extends AppCompatActivity implements View.OnCli
         noteHighHighFsharp = soundPool.load(this, R.raw.scalehighhighfs, 1);
         noteHighHighD = soundPool.load(this, R.raw.scalehighhighd, 1);
         noteHighHighCsharp = soundPool.load(this, R.raw.scalehighhighcs, 1);
-        noteHighHighB = soundPool.load(this, R.raw.scalehighhighb, 1);
-        noteHighHighAsharp = soundPool.load(this, R.raw.scalehighhighas, 1);
+        noteHighHighB = soundPool.load(this, R.raw.scalehighb, 1);
+        noteHighHighAsharp = soundPool.load(this, R.raw.scalehighas, 1);
 
     }
 
@@ -280,12 +280,12 @@ public class SynthesizerActivity extends AppCompatActivity implements View.OnCli
         scale.add(new Note(noteD, Note.WHOLE_NOTE / 4));
         scale.add(new Note(noteFsharp, Note.WHOLE_NOTE / 4));
         scale.add(new Note(noteHighA, Note.WHOLE_NOTE / 4));
-        scale.add(new Note(noteHighCsharp,  Note.WHOLE_NOTE / 2));
+        scale.add(new Note(noteHighCsharp, Note.WHOLE_NOTE / 2));
         scale.add(new Note(noteHighA, Note.WHOLE_NOTE / 2));
         scale.add(new Note(noteFsharp, Note.WHOLE_NOTE / 4));
-        scale.add(new Note(noteHighE, Note.WHOLE_NOTE / 3));
-        scale.add(new Note(noteHighDsharp, Note.WHOLE_NOTE / 4));
-        scale.add(new Note(noteHighD, Note.WHOLE_NOTE / 3));
+        scale.add(new Note(noteHighE, Note.WHOLE_NOTE));
+//      scale.add(new Note(noteHighDsharp, Note.WHOLE_NOTE));
+        scale.add(new Note(noteHighD, Note.WHOLE_NOTE));
         scale.add(new Note(noteGsharp, Note.WHOLE_NOTE / 2));
         scale.add(new Note(noteHighCsharp, Note.WHOLE_NOTE / 4));
         scale.add(new Note(noteFsharp, Note.WHOLE_NOTE / 2));
@@ -293,7 +293,7 @@ public class SynthesizerActivity extends AppCompatActivity implements View.OnCli
         scale.add(new Note(noteGsharp, Note.WHOLE_NOTE / 2));
         scale.add(new Note(noteHighCsharp, Note.WHOLE_NOTE / 2));
         scale.add(new Note(noteG, Note.WHOLE_NOTE / 4));
-        scale.add(new Note(noteFsharp, Note.WHOLE_NOTE / 4));
+        scale.add(new Note(noteFsharp, Note.WHOLE_NOTE / 2));
         scale.add(new Note(noteE, Note.WHOLE_NOTE / 2));
         scale.add(new Note(noteC, 0));
         scale.add(new Note(noteE, Note.WHOLE_NOTE / 4));
@@ -349,7 +349,43 @@ public class SynthesizerActivity extends AppCompatActivity implements View.OnCli
         scale.add(new Note(noteHighHighCsharp, Note.WHOLE_NOTE / 4));
         scale.add(new Note(noteHighHighD, Note.WHOLE_NOTE / 4));
         scale.add(new Note(noteHighHighFsharp, Note.WHOLE_NOTE / 4));
-        scale.add(new Note(noteHighHighA, Note.WHOLE_NOTE / 4));
+        scale.add(new Note(noteHighHighA, Note.WHOLE_NOTE));
+        scale.add(new Note(noteA, Note.WHOLE_NOTE / 2));
+        scale.add(new Note(noteBb, Note.WHOLE_NOTE / 2));
+        scale.add(new Note(noteB, Note.WHOLE_NOTE / 2));
+        scale.add(new Note(noteBb, Note.WHOLE_NOTE / 4));
+        scale.add(new Note(noteB, Note.WHOLE_NOTE));
+        scale.add(new Note(noteA, Note.WHOLE_NOTE / 4));
+        scale.add(new Note(noteBb, Note.WHOLE_NOTE / 4));
+        scale.add(new Note(noteB, Note.WHOLE_NOTE / 4));
+        scale.add(new Note(noteFsharp, Note.WHOLE_NOTE / 2));
+        scale.add(new Note(noteCsharp, Note.WHOLE_NOTE / 4));
+        scale.add(new Note(noteB, Note.WHOLE_NOTE / 2));
+        scale.add(new Note(noteBb, Note.WHOLE_NOTE / 4));
+        scale.add(new Note(noteB, Note.WHOLE_NOTE * 2));
+        scale.add(new Note(noteB, Note.WHOLE_NOTE / 2));
+        scale.add(new Note(noteC, Note.WHOLE_NOTE / 2));
+        scale.add(new Note(noteCsharp, Note.WHOLE_NOTE / 2));
+        scale.add(new Note(noteC, Note.WHOLE_NOTE / 4));
+        scale.add(new Note(noteCsharp, Note.WHOLE_NOTE / 2));
+        scale.add(new Note(noteCsharp, Note.WHOLE_NOTE / 4));
+        scale.add(new Note(noteC, Note.WHOLE_NOTE / 4));
+        scale.add(new Note(noteCsharp, Note.WHOLE_NOTE / 4));
+        scale.add(new Note(noteHighBb, Note.WHOLE_NOTE / 2));
+        scale.add(new Note(noteDsharp, Note.WHOLE_NOTE / 4));
+        scale.add(new Note(noteCsharp, Note.WHOLE_NOTE / 2));
+        scale.add(new Note(noteDsharp, Note.WHOLE_NOTE / 4));
+        scale.add(new Note(noteB, Note.WHOLE_NOTE));
+        scale.add(new Note(noteDsharp, Note.WHOLE_NOTE / 4));
+        scale.add(new Note(noteD, Note.WHOLE_NOTE / 4));
+        scale.add(new Note(noteHighA, Note.WHOLE_NOTE / 2));
+        scale.add(new Note(noteD, Note.WHOLE_NOTE / 4));
+        scale.add(new Note(noteE, 0));
+        scale.add(new Note(noteGsharp, Note.WHOLE_NOTE / 4));
+        scale.add(new Note(noteE, 0));
+        scale.add(new Note(noteGsharp, Note.WHOLE_NOTE / 4));
+        scale.add(new Note(noteE, 0));
+        scale.add(new Note(noteGsharp, Note.WHOLE_NOTE / 2));
 
         playSong(scale);
 
