@@ -167,7 +167,6 @@ public class SynthesizerActivity extends AppCompatActivity implements View.OnCli
         noteHighHighD = soundPool.load(this, R.raw.scalehighhighd, 1);
         noteHighHighCsharp = soundPool.load(this, R.raw.scalehighhighcs, 1);
         noteHighHighB = soundPool.load(this, R.raw.scalehighb, 1);
-        noteHighHighAsharp = soundPool.load(this, R.raw.scalehighas, 1);
 
     }
 
